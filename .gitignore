@@ -3,18 +3,16 @@ __pycache__/
 *.pyc
 *.pyo
 
-# Model files (opt)
-*.pth
-*.pt
-
 # Node
 node_modules/
+dist/
 
-# Env
+# Environment
 .env
-
-# Logs
-*.log
 
 # OS
 .DS_Store
+Thumbs.db
+
+# Logs
+*.log
