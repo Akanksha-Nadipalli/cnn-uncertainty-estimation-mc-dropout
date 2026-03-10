@@ -27,18 +27,14 @@ The project includes a **FastAPI backend for model inference** and a **React fro
 
 ## Uncertainty Estimation Workflow
 
-```mermaid
-graph TD
-A[Input Image] --> B[CNN Model]
-B --> C[Monte Carlo Dropout Enabled]
-C --> D[Multiple Forward Pass Predictions]
-D --> E[Probability Distribution]
-E --> F[Predictive Entropy Calculation]
-F --> G[Prediction + Uncertainty Score]
-```
+The uncertainty estimation process works as follows:
 
-Instead of a single prediction, the model performs **multiple forward passes with dropout enabled**, producing a distribution of predictions.
-The **predictive entropy** of this distribution represents the model’s uncertainty.
+1. The input image is passed through the trained CNN model.
+2. Dropout layers remain active during inference.
+3. The model performs multiple forward passes (Monte Carlo sampling).
+4. A distribution of prediction probabilities is obtained.
+5. Predictive entropy is calculated from this distribution.
+6. Higher entropy indicates higher uncertainty in the model’s prediction.
 
 ---
 
@@ -47,7 +43,7 @@ The **predictive entropy** of this distribution represents the model’s uncerta
 Clone the repository
 
 ```
-git clone https://github.com/YOUR_USERNAME/cnn-uncertainty-estimation.git
+git clone https://github.com/Akanksha-Nadipalli/cnn-uncertainty-estimation-mc-dropout.git
 ```
 
 Navigate to backend
@@ -129,9 +125,19 @@ Interpretation:
 
 ## Future Improvements
 
-* Deploy model as a cloud API
-* Compare with Bayesian Neural Networks
-* Support additional datasets
+Possible extensions of this project include:
+
+- **Model Improvement**  
+  Train deeper architectures such as ResNet or EfficientNet to improve classification accuracy.
+
+- **Advanced Uncertainty Methods**  
+  Compare Monte Carlo Dropout with other uncertainty estimation techniques such as Bayesian Neural Networks or Deep Ensembles.
+
+- **Real-Time Detection**  
+  Extend the system to perform real-time traffic sign detection using video input from a camera.
+
+- **Mobile or Edge Integration**  
+  Integrate the model into mobile or edge devices for use in intelligent transportation systems or driver assistance applications.
 
 ---
 
