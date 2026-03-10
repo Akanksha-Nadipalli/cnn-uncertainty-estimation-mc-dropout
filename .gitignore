@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Model files (opt)
+*.pth
+*.pt
+
+# Node
+node_modules/
+
+# Env
+.env
+
+# Logs
+*.log
+
+# OS
+.DS_Store
