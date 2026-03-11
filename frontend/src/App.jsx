@@ -400,7 +400,7 @@ Stochastic Prediction Distribution
 <div className="bg-indigo-50 border border-indigo-100 p-5 rounded-lg hover:shadow-lg transition">
 
 <p className="text-sm text-gray-500">
-Confidence
+Mean Probability
 </p>
 
 <p className="text-xl font-semibold text-gray-800">
