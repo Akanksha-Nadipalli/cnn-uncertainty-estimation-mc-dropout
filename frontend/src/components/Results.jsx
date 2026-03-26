@@ -13,7 +13,6 @@ function Results({ result, classes, conflictDetected}) {
   return (
    <div className="relative max-w-6xl mx-auto px-6 mt-4 text-white">
 
-5
   <motion.div
   animate={{ x: [0, 60, -40, 0], y: [0, -40, 30, 0] }}
   transition={{ duration: 25, repeat: Infinity }}

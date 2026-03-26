@@ -246,7 +246,7 @@ const classFrequency =
 
                 <XAxis
                   dataKey="class"
-                  angle={-15}
+                  angle={0}
                   textAnchor="end"
                   interval={0}
                   stroke="#9ca3af"
